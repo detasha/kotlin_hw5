@@ -3,16 +3,16 @@
 import ru.netology.post.Post
 
 object WallService {
-<span class="fc" id="L6">    private var posts = emptyArray&lt;Post&gt;()</span>
-<span class="pc" id="L7">    var postId: Int = 1</span>
+<span class="nc" id="L6">    private var posts = emptyArray&lt;Post&gt;()</span>
+<span class="nc" id="L7">    var postId: Int = 1</span>
 
 
     fun add(post: Post): Post {
         //post.id = post.ownerId.hashCode()+1
-<span class="fc" id="L12">        post.id = postId</span>
-<span class="fc" id="L13">        postId++</span>
-<span class="fc" id="L14">        posts += post</span>
-<span class="fc" id="L15">        return post</span>
+<span class="nc" id="L12">        post.id = postId</span>
+<span class="nc" id="L13">        postId++</span>
+<span class="nc" id="L14">        posts += post</span>
+<span class="nc" id="L15">        return post</span>
     }
 
 
@@ -23,12 +23,13 @@ object WallService {
 <span class="nc" id="L23">                var post = post.copy(fromId= post.fromId,createdBy=post.createdBy,data=post.data,</span>
 <span class="nc" id="L24">                    text= post.text, replyOwnerId = post.replyOwnerId, replyPostId = post.replyPostId, friendsOnly=post.friendsOnly,</span>
 <span class="nc" id="L25">                    comments = post.comments,copyright=post.copyright,reposts=post.reposts, views = post.views, postType=post.postType,</span>
-<span class="nc" id="L26">                    singerId=post.singerId, canPin=post.canPin, canDelete=post.canDelete,canEdite=post.canEdite,isPinned=post.isPinned,</span>
-<span class="nc" id="L27">                    markedAsAds=post.markedAsAds,isFavored=post.isFavored, donut=post.donut, postponedId=post.postponedId)</span>
-<span class="nc" id="L28">                return true</span>
+<span class="nc" id="L26">                    postSource =post.postSource, geo =post.geo,singerId=post.singerId, copyHistory =post.copyHistory, canPin=post.canPin,</span>
+<span class="nc" id="L27">                    canDelete=post.canDelete, canEdite=post.canEdite,isPinned=post.isPinned, markedAsAds=post.markedAsAds,isFavored=post.isFavored,</span>
+<span class="nc" id="L28">                    donut=post.donut, postponedId=post.postponedId)</span>
+<span class="nc" id="L29">                return true</span>
             }
         }
-<span class="nc" id="L31">        return false</span>
+<span class="nc" id="L32">        return false</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
