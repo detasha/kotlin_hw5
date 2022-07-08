@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test" tests="3" skipped="0" failures="1" errors="0" timestamp="2022-07-08T13:27:40" hostname="LAPTOP-QAQ5Q9MT" time="0.151">
+<testsuite name="Test" tests="3" skipped="0" failures="1" errors="0" timestamp="2022-07-08T13:33:50" hostname="LAPTOP-QAQ5Q9MT" time="0.176">
   <properties/>
-  <testcase name="WallServiceUpdateFalse" classname="Test" time="0.151">
+  <testcase name="WallServiceUpdateFalse" classname="Test" time="0.175">
     <failure message="junit.framework.AssertionFailedError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
 	at junit.framework.Assert.fail(Assert.java:55)
 	at junit.framework.Assert.assertTrue(Assert.java:22)
@@ -59,7 +59,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="WallServiceUpdateTrue" classname="Test" time="0.0"/>
+  <testcase name="WallServiceUpdateTrue" classname="Test" time="0.001"/>
   <testcase name="WallServiceAdd" classname="Test" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

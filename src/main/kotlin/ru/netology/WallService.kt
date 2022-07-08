@@ -23,7 +23,7 @@ object WallService {
                 var post = post.copy(fromId= post.fromId,createdBy=post.createdBy,data=post.data,
                     text= post.text, replyOwnerId = post.replyOwnerId, replyPostId = post.replyPostId, friendsOnly=post.friendsOnly,
                     comments = post.comments,copyright=post.copyright,reposts=post.reposts, views = post.views, postType=post.postType,
-                    postSource =post.postSource, geo =post.geo,singerId=post.singerId, copyHistory =post.copyHistory, canPin=post.canPin,
+                    postSource =post.postSource, attachments = post.attachments, geo =post.geo,singerId=post.singerId, copyHistory =post.copyHistory, canPin=post.canPin,
                     canDelete=post.canDelete, canEdite=post.canEdite,isPinned=post.isPinned, markedAsAds=post.markedAsAds,isFavored=post.isFavored,
                     donut=post.donut, postponedId=post.postponedId)
                 return true
