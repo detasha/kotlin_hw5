@@ -4,7 +4,20 @@ import ru.netology.post.Post
 
 object WallService {
     private var posts = emptyArray<Post>()
+    private var comments = emptyArray<Comment>()
     var postId: Int = 1
+
+
+    fun createComment(postId: Int, comment: Comment): Boolean {
+            for (post in posts) {
+                if (post.id == postId) {
+                    comments += comment
+                    return true
+                } else throw PostNotFoundException("Пост не найден")
+            }
+            throw PostNotFoundException("Пост не найден")
+        }
+
 
 
     fun add(post: Post): Post {
